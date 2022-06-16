@@ -186,7 +186,7 @@ public class AppController {
                 .count();
 
         var res4 = coches.stream()
-                .filter(a -> a.getColor().equalsIgnoreCase("Audi"))
+                .filter(a -> a.getModelo().equalsIgnoreCase("Audi"))
                 .count();
 
         String h = "=== ESTADÍSTICAS: COCHES ===" + "\n"
