@@ -1,0 +1,9 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "coches" (
+	"id"	TEXT NOT NULL UNIQUE,
+	"model"	TEXT NOT NULL,
+	"matricula"	TEXT NOT NULL UNIQUE,
+	"color"	TEXT,
+	PRIMARY KEY("id")
+);
+COMMIT;

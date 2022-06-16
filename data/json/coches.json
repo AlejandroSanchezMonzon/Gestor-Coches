@@ -1,0 +1,26 @@
+[
+  {
+    "uuid": "5da812c6-8c35-465c-941a-c1dd4f4fb4cf",
+    "modelo": "Seat",
+    "matricula": "7892FRV",
+    "color": "Azul Marino"
+  },
+  {
+    "uuid": "0b6454e9-1665-4a31-9a62-23b35a4cba38",
+    "modelo": "Audi",
+    "matricula": "8972LKS",
+    "color": "Blanco"
+  },
+  {
+    "uuid": "7ec16311-7db5-4596-b5da-d1d785b9745f",
+    "modelo": "Mercedes",
+    "matricula": "2981DSA",
+    "color": "Gris"
+  },
+  {
+    "uuid": "f388eada-2903-4532-94b8-d7f8745f5cb9",
+    "modelo": "BMW",
+    "matricula": "8231KJA",
+    "color": "Rojo"
+  }
+]
