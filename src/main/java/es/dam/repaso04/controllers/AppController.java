@@ -189,11 +189,31 @@ public class AppController {
                 .filter(a -> a.getModelo().equalsIgnoreCase("Audi"))
                 .count();
 
-        String h = "=== ESTADÍSTICAS: COCHES ===" + "\n"
+        var res5 = (long) coches.size();
+
+        var res6 = coches.stream().filter(c -> c.getMatricula().toUpperCase().contains("K")).toList().toString();
+
+        var res7 = coches.stream().collect(Collectors.groupingBy(Coche::getColor, Collectors.counting())).toString();
+
+        var res8 = coches.stream().collect(Collectors.groupingBy(Coche::getModelo, Collectors.counting())).toString();
+
+        String h = "ESTADÍSTICAS: COCHES" + "\n"
+                + "------------------------------------"+ "\n"
+                + "Número total de coches: " + res5 + '.' + "\n"
+                + "------------------------------------"+ "\n"
                 + "Número de coches blancos: " + res2 + '.' + "\n"
+                + "------------------------------------"+ "\n"
                 + "Número de coches negros: " + res1 + '.' + "\n"
+                + "------------------------------------"+ "\n"
                 + "Número de coches Mercedes: " + res3 + '.' + "\n"
-                + "Número de coches Audi: " + res4 + '.' + "\n";
+                + "------------------------------------"+ "\n"
+                + "Número de coches Audi: " + res4 + '.' + "\n"
+                + "------------------------------------"+ "\n"
+                + "Vehículos que contiene una A en su matrícula: " + res6 + '.' + "\n"
+                + "------------------------------------"+ "\n"
+                + "Vehículos agrupados por colores: " + res7 + '.' + "\n"
+                + "------------------------------------"+ "\n"
+                + "Vehículos agrupados por modelo: " + res8 + '.' + "\n";
 
         try {
             oos.writeBytes(h);

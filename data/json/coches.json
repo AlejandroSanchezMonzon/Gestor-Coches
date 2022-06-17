@@ -22,5 +22,35 @@
     "modelo": "BMW",
     "matricula": "8231KJA",
     "color": "Rojo"
+  },
+  {
+    "uuid": "f33732e5-c368-413c-8c63-b750e24811cc",
+    "modelo": "Mercedes",
+    "matricula": "8213AJS",
+    "color": "Verde"
+  },
+  {
+    "uuid": "546f60a4-7893-4081-84aa-08795753bcba",
+    "modelo": "Audi",
+    "matricula": "9876HJI",
+    "color": "Morado"
+  },
+  {
+    "uuid": "772901c9-74af-4bf5-baab-edf43bcca011",
+    "modelo": "Audi",
+    "matricula": "5879DLK",
+    "color": "Negro"
+  },
+  {
+    "uuid": "dab56774-e4a1-4116-b261-b4166052857e",
+    "modelo": "Seat",
+    "matricula": "9005JSD",
+    "color": "Blanco"
+  },
+  {
+    "uuid": "d98812e5-f7b7-4b74-a16c-3164d9cb5615",
+    "modelo": "Peugeot",
+    "matricula": "8721KJA",
+    "color": "Naranja"
   }
 ]

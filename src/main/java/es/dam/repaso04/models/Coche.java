@@ -66,4 +66,13 @@ public class Coche {
     public void setColor(String color) {
         this.color.set(color);
     }
+
+    @Override
+    public String toString() {
+        return "Coche{" +
+                "modelo=" + modelo.getValue() +
+                ", matricula=" + matricula.getValue() +
+                ", color=" + color.getValue() +
+                '}';
+    }
 }
